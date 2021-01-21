@@ -52,7 +52,30 @@ class App extends Component {
                 <h6 className="codigo">yarn start</h6>
             <h4># Link para instalar o Yarn</h4>
             <a className="link" href="https://classic.yarnpkg.com/en/" target="_blank">Clique aqui</a> para instalar o Yarn
-            <h5>Dev. Erinaldo Cardoso</h5>
+            <br /><br />
+            <h1>Comandos do Git usando o cmd</h1>
+            <h5># Dentro na pasta do seu projeto digite:</h5>
+                <h6 className="codigo">git init</h6>
+            <h5># Saber o estatus git dentro do projeto, digite:</h5>
+                <h6 className="codigo">git status</h6>
+            <h5># Adicionar o arquivo ou diretório, dizer qual será encaminhado ou sincronizado com o github:</h5>
+                <h6 className="codigo">git add . ou git add nome do arquivo ou do diretório</h6>
+            <h5># Gravar os arquivos para serem enviados para o repositório no github:</h5>
+                <h6 className="codigo">git commit -m "Alguma descrição mensagem"</h6>
+            <h4># Ver o histório das alterações, quem fez e quando foram feitas:</h4>
+              <h6 className="codigo">git log</h6>
+            <h4># Por fim enviar o projeto commit para o repositorio no github:</h4>
+              <h6 className="codigo">git remote add origin https://github.com/nome-do-usuario/nome-do-repositorio.git</h6><br />
+              <h6 className="codigo">git push -u origin master</h6>
+            <br />
+            <h4># Quando fizer alteração no projeto, deve repetir os comandos:</h4>
+              <h6 className="codigo">git status</h6><br />
+              <h6 className="codigo">git add . ou git add nome do arquivo modificado</h6><br />
+              <h6 className="codigo">git status</h6><br />
+              <h6 className="codigo">git commit -m "Alguma descrição da mudança"</h6><br />
+              <h6 className="codigo">git log</h6><br />
+              <h6 className="codigo">git push</h6><br />
+            <h5>Dev. Erinaldo Cardoso. Em 21-01-2021</h5>
           </section>
       </div>
     );
