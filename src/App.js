@@ -51,7 +51,8 @@ class App extends Component {
             <h5># Abre o terminal do visual code e digita:</h5>
                 <h6 className="codigo">yarn start</h6>
             <h4># Link para instalar o Yarn</h4>
-                <a className="link" href="https://classic.yarnpkg.com/en/" target="_blank">Clique aqui</a> para instalar o Yarn
+            <a className="link" href="https://classic.yarnpkg.com/en/" target="_blank">Clique aqui</a> para instalar o Yarn
+            <h5>Dev. Erinaldo Cardoso</h5>
           </section>
       </div>
     );
