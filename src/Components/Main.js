@@ -1,5 +1,6 @@
 import React from 'react';
 import './main.css';
+import Section from './Section';
 
 const Main = () => (
     // function Footer() {
@@ -7,7 +8,7 @@ const Main = () => (
         <div className="Main">
             <span id="topo"></span>
             <section className="cx-coluna-um">
-                <div className="section-row principal">
+                <div className="section-row artigo-1">
                     <p className="title">@_erinaldo - Commando Line</p>
                     <p className="master">@_erinaldoDev <font>in website on</font> master <span>[+]</span></p>
                     <p className="insert">&gt; Insert command ...</p>
@@ -15,17 +16,14 @@ const Main = () => (
                     <p className="bem-vindo">.. Bem vindo ao meu website !</p>
                     <p className="copyright">&copy;&nbsp;Todos os direitos reservados a @_ErinaldoDev</p>
                 </div>
-                <div className="section-row">
-                    <h1>Article Dois</h1>
-                    <button className="btn btn-success mr-3">
-                        Ler mais &gt;
-                    </button>
+                <div className="section-row artigo-2">
+                    <Section />
                 </div>
                 <div className="section-row">
                     <h2>Article Três</h2>
                     <button className="btn btn-outline-primary mr-3">
                         Ler mais &gt;
-                    </button>
+                    </button> 
                 </div>
             </section>
             <section className="cx-coluna-dois">
