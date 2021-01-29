@@ -1,0 +1,166 @@
+.Main {
+    width: 100%;
+}
+
+.cx-coluna-um {
+    width: 70%;
+    height: auto;
+    float: left;
+    color: #2e2d2d;
+    /* padding: 70px 0; */
+    margin-top: 90px;
+    margin-bottom: 20px;
+    display: grid;
+}
+
+/* ---------------------- INICIO MEU SISTEMA -------------------------- */
+
+.cx-coluna-um .principal {
+    background: rgb(47, 47, 73);
+    color: #fff;
+    font-size: .9em;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.title {
+    width: 100%;
+    background: rgb(78, 78, 77);
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    margin: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.master, .insert, .labelInput, .inputCodigo, .bem-vindo {
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+    .master {
+        margin-top: 20px;
+        color: rgb(238, 136, 207);
+    }
+
+    .master font{
+        color: #fff;
+    }
+
+    .master span{
+        color: rgb(245, 136, 92);
+    }
+
+    .insert {
+        color: rgb(17, 184, 142);
+    }
+    
+    .labelInput {
+        color: rgb(154, 156, 155);
+    }
+
+    .inputCodigo {
+        width: 60%;
+        border: none;
+        outline: none;
+        background: transparent;
+        border-bottom: .04rem solid rgb(122, 122, 122);
+        color: rgb(248, 246, 98);
+        margin-left: 5px;
+    }
+
+    .inputCodigo:focus {
+        border-bottom: 1px solid rgb(63, 63, 62)
+    }
+
+    .bem-vindo {
+        margin-top: 20px;
+        font-family: 'Verdana', sans-serif;
+    }
+
+.copyright {
+    /* position: relative; */
+    margin-top: 304px;
+    background: rgb(78, 78, 77);
+    height: 2.1em;
+    line-height: 2.1em;
+    text-align: center;
+    bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* ---------------------- FIM MEU SISTEMA -------------------------- */
+
+.cx-coluna-dois {
+    width: 30%;
+    height: auto;
+    float: right;
+    color: #2e2d2d;
+    /* padding: 70px 0; */
+    margin-top: 90px;
+    margin-bottom: 20px;
+    display: grid;
+    justify-content: left;
+}
+
+.section-row {
+    width: 80%;
+    height: 500px;
+    padding: 20px;
+    border: 1px solid #b8b4b4;
+    background-color: #fff;
+    text-align: justify;
+    color: #2e2d2d;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px -6px #222;
+    margin: 15px auto;
+}
+
+.aside-row {
+    width: 360px;
+    height: 235px;
+    border: 1px solid #b8b4b4;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2e2d2d;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px -6px #222;
+    margin: 15px auto;
+}
+
+@media screen and (max-width: 1238px) {
+    .cx-coluna-um {
+        width: 100%;
+        display: inline-block;
+    }
+    
+    .cx-coluna-dois {
+        width: 97%;
+        display: flex;
+        flex-wrap: wrap;
+        float: none;
+        padding: 0;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        /* padding: 20px 0 20px; */
+    }
+    
+    .section-row {
+        width: 94%;
+    }
+         /* display: inline-flex; */
+    
+    /* .cx-coluna-dois > div{
+        flex: 1 1 260px;
+        margin: 15px;
+    } */
+
+    .aside-row {
+        flex: 1 1 280px;
+        margin: 15px;
+    } 
+}

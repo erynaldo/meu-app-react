@@ -1,0 +1,464 @@
+.Header{
+    /* background: linear-gradient(90deg,#0388e5 0,#07bdf4); */
+    background-color: #5cb6c1;
+    box-shadow: 0 1px 5px rgba(34, 34, 34, 0.537);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+} 
+
+.cx-logo-header{
+    /* width: 20%; */
+    height: 80px;
+    margin-left: 35px;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #5cb6c1; */
+}
+
+.cx-logo-header img{
+    width: 160px;
+}
+
+.cx-menu-h{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* width: 63%; */
+    height: 80px;
+    /* position: relative; */
+    /* background-color: #5cb6c1; */
+}
+
+.cx-menu-h ul{
+    margin: 0;
+    width: 100%;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cx-menu-h li{
+    list-style: none;
+    /* position: relative; */
+    height: 80px;
+    line-height: 80px;
+}
+
+.cx-menu-h a{
+    /* position: relative; */
+    display: block;
+    text-decoration: none;
+    padding-left: 14px;
+    padding-right: 14px;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+
+.cx-menu-h span{
+    /* position: relative; */
+    display: block;
+    text-decoration: none;
+    padding-left: 14px;
+    padding-right: 14px;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+
+.cx-menu-h a:hover{
+    color: #11626d;
+    font-weight: bold;
+}
+
+.cx-menu-h span:hover{
+    color: #11626d;
+    font-weight: bold;
+}
+
+/* xxxxxxxxxxxxxxxxx efeito dropdown quando clicado xxxxxxxxxxxxxxxxx */
+
+/* .cx-menu-h .dropdown-menu{
+    top: 0;
+    padding: 0;
+    width: 300px;
+    height: auto;
+    border-radius: 0;
+    border: none;
+    background-color: #5cb6c1;
+}
+
+.cx-menu-h .dropdown-menu a{
+    color: #fff;
+    line-height: 60px;
+    transition: .4s;
+}
+
+.cx-menu-h .dropdown-menu a:hover{
+    background-color: #188391;
+} */
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+.cx-menu-h ul ul{
+    display: none;
+    position: absolute;
+    margin: 0;
+    background-color: #5cb6c1;
+}
+
+.cx-menu-h ul ul li{
+    height: 50px;
+    line-height: 50px;
+}
+
+.cx-menu-h ul ul li a:hover{
+    background-color: #188391;
+    color: #fff;
+    font-weight: normal;
+    height: 50px;
+}
+
+.cx-menu-h ul li:hover > ul{
+    display: block;
+    /* float: left; */
+    width: 225px;
+    height: auto;
+    text-align: left;
+}
+
+.cx-pesquisar{
+    /* width: 17%; */
+    height: 80px;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: #5cb6c1; */
+    margin-right: 35px;
+}
+
+.btn-fechar{
+    position: absolute;
+    top: 4px;
+    right: 15px;
+}
+
+.cx-btn-login{
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    /* position: fixed; */
+    right: 6rem;
+}
+
+.btn-login{
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 6px 12px;
+    border-radius: 25px;
+    transition: .5s;
+}
+
+.btn-login:hover{
+    background-color: #188391;
+}
+
+.cx-pesquisar .btn-login-mobile{
+    width: 40px;
+    height: 40px;
+    top: 1.2rem;
+    right: 85px;
+    border: 0;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #188391;
+    transition: .5s;
+    position: fixed;
+    box-sizing: border-box;
+    display: none;
+    padding: 10px;
+}
+
+.cx-pesquisar .btn-login-mobile:hover{
+    background-color: #424042;
+}
+
+.cx-pesquisar .btn-login-mobile a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.cx-pesquisar .btn-login-mobile i{
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+}
+
+/* INÍCIO DO DROPDOWN FORMULARIO LOGIN */
+
+#dropdown-alterar{
+    width: auto;
+    height: auto;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    /* margin-top: 1; */
+    /* margin-right: 30px; */
+}
+
+.form-login-dropdown{ 
+    width: 300px; 
+    height: auto;
+    /* border: 0;  */
+    background: #5cb6c1; 
+    outline: none; 
+    padding: 15px;
+    color: #fff; 
+    /* border-radius: 3px; */
+    cursor: auto; 
+    top: 12px; 
+    right: 65px; 
+    position: fixed; 
+    margin: 0;
+}
+
+.form-login-dropdown label{
+    padding-bottom: 0; font-size: 1em; 
+    letter-spacing: 2px;
+}
+
+.input-login-navbar{
+    font-size: .9em; 
+    padding: 9px 10px; 
+    margin-bottom: 13px; 
+    width: 270px; height: 38px; 
+    border: 1px solid #188391; 
+    border-radius: 3px;
+    outline: none; background-color: #fff; 
+    letter-spacing: 1px;
+}
+
+.input-login-navbar:focus{
+    border: 1px solid #262A30;
+    outline: none;
+}
+
+.button-login-navbar{
+    background-color: #188391; color: #fff; 
+    font-size: 1.1em; 
+    outline: none; margin-top: 8px; padding: 6px; 
+    width: 270px; height: 40px; 
+    cursor: pointer; border: 0; transition: .5s; 
+    letter-spacing: 2px; border-radius: 3px;
+}
+
+.button-login-navbar:hover{
+    background-color: #262A30;
+}
+
+.esqueci-cadastre{
+    margin-top: 13px; text-align: center;
+}
+
+.esqueci-cadastre a{
+    margin-top: 13px; font-size: 0.8em; 
+    text-align: center; 
+    letter-spacing: 1px; 
+    color: #fff;
+}
+
+#esqueci-senha:hover{
+    text-decoration: underline;
+}
+
+#cadastre:hover{
+    text-decoration: underline;
+}
+
+/* FIM DO DROPDOWN FORMULARIO LOGIN */
+
+
+/* INÍCIO DO DROPDOWN FORMULARIO PESQUISAR */
+
+.cx-btn-search{
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    /* position: fixed; */
+    right: 2rem;
+    margin-left: 10px;
+}
+
+.btn-search i{
+    background-color: #fff;
+    padding: 9px;
+    border-radius: 100%;
+    font-size: 1.1em;
+    color: #188391;
+    transition: all.5s;
+}
+
+.btn-search i:hover{
+    background-color: #188391;
+    color: #fff;
+}
+
+.btn-fechar2{
+    position: absolute;
+    top: 4px;
+    right: 10px;
+}
+
+.form-search-dropdown{ 
+    width: 440px; 
+    height: 90px;
+    background: #5cb6c1; 
+    outline: none; 
+    color: #fff; 
+    cursor: auto; 
+    top: 16px;
+    right: 35px;
+    position: fixed;
+    /* text-align: center; */
+    margin: 0;
+    display: inline-flex;
+    /* padding: 2px 10px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.input-search{
+    font-size: 1em; 
+    padding-left: 8px;
+    margin-top: 9px;
+    width: 290px; 
+    height: 35px; 
+    /* border: 0; */
+    border: 1px solid #188391; 
+    background-color: #fff; 
+    letter-spacing: 1px;
+}
+
+.input-search:focus{
+    border: 1px solid #262A30; 
+    outline: none;
+}
+
+.button-submit-search{
+    background-color: #188391; 
+    color: #fff; 
+    font-size: 1em; 
+    width: 100px; 
+    height: 35px; 
+    cursor: pointer; 
+    border: 0; 
+    transition: .5s;
+    letter-spacing: 2px;
+    margin-top: 9px;
+}
+
+.button-submit-search:hover{
+    background-color: #262A30;
+}
+
+/* FIM DO DROPDOWN FORMULARIO PESQUISAR */
+
+/* ------------------------ INICIO DO CAMPO PESQUISAR - ESTÁ OCULTO ---------------------- */
+
+.formulario-search-responsivo{
+    position: fixed;
+    /* top: 1.5rem; */
+    right: 2rem;
+    width: 40px;
+    height: 40px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 2px solid white;
+    transition: .8s;
+    display: none;
+}
+
+.formulario-search-responsivo:hover{
+    width: 300px;
+    cursor: pointer;
+}
+
+.formulario-search-responsivo input{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;;
+    height: 36px;
+    line-height: 20px;
+    outline: none;
+    border: 0;
+    display: none;
+    font-size: 0.9em;
+    border-radius: 20px;
+    padding-left: 9px;
+    padding-right: 39px;
+    letter-spacing: 1px;
+}
+
+.formulario-search-responsivo:hover input{
+    display: block;
+}
+
+.formulario-search-responsivo .fa{
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    font-size: 1.2em;
+    border-radius: 50%;
+    padding: 8px;
+    color: #014f4f;
+    text-align: center;
+    /*transition: all .8s;*/
+}
+
+.formulario-search-responsivo:hover .fa{
+    background: #014f4f;
+    color: white;
+}
+
+/* ------------------------------------ FIM DO CAMPO PESQUISAR ------------------------------------ */
+
+@media screen and (max-width: 895px) {
+    .cx-logo-header{
+        margin-left: 68px;
+    }
+
+    .cx-menu-h{
+        display: none;
+    }
+
+    .form-search-dropdown{ 
+        width: 350px; 
+    }
+    
+    .input-search{
+        width: 250px; 
+    }
+    
+    .button-submit-search{
+        width: 80px; 
+    }
+}

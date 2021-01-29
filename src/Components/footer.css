@@ -1,0 +1,121 @@
+.Footer {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    background: #262A30;
+    color: #fff;
+}
+
+.section-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* INÍCIO DA PRIMEIRA COLUNA */
+.coluna-um {
+    width: 60%;
+    padding-top: 16px;
+}
+
+.link{
+    display: inline-block;
+    margin: 4px 16px;
+    color: #a3a7a9;
+    font-size: .9em;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: #188391;
+}
+
+.siga-nos {
+    margin: 12px 0;
+    font-size: .9em;
+    color: #188391;
+}
+
+.rede-social{
+    margin: 0 10px;
+}
+
+.rede-social i{
+    margin-bottom: 10px;
+    font-size: 1.6em;
+    color: #a3a7a9;
+}
+
+.rede-social i:hover{
+    color: #188391;
+}
+
+/* INÍCIO DA SEGUNDA COLUNA */
+ .coluna-dois {
+    width: 40%;
+    padding-top: 20px;
+    font-size: .9em;
+}
+
+.primeiro-paragrafo{
+    color: #188391;
+}
+
+.paragrafo-titulo{
+    color: #a3a7a9;
+    margin-top: -10px;
+}
+
+.paragrafo-resposta{
+    color: #656e72;
+    margin-top: -10px;
+}
+
+
+/* INÍCIO DA LINHA LOGO E COPYRIGHT */
+.section-2{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.linha{
+    width: 96%;
+    height: .05rem;
+    background-color: #a3a7a9;
+    margin: 0 auto;
+}
+
+.logo-footer {
+    width: 110px;
+    margin-top: 24px;
+    margin-bottom: 7px;
+}
+
+.section-2 p{
+    margin-top: -16px;
+}
+
+.corporation{
+    color: #656e72;
+    font-size: .9em;
+}
+
+@media screen and (max-width: 850px) {
+    .Footer {
+        display: flex;
+        flex-flow: row wrap;
+        flex-wrap: wrap;
+    }
+
+    .coluna-um {
+        width: 100%;
+        height: auto;
+    }
+
+    .coluna-dois {
+        width: 100%;
+        height: auto;
+    }
+}
