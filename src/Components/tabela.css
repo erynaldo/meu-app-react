@@ -1,0 +1,138 @@
+.container-tabela {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #fff !important;
+
+    /* height: 180vh !important; */
+}
+
+/* .tabela {
+    width: 80%;
+    margin: auto !important;
+    background-color: #2dbe9a !important;
+    text-align: center;
+} */
+
+.table {
+    /* width: 94%; */
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.table th {
+    background-color: #18a151;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.table th, .table td {
+    border: 1px solid #4e4d4d !important;
+}
+
+/* .table tbody tr:nth-child(even) {
+    background-color: #e6ebeb !important;
+} */
+
+.table tbody tr { 
+    background-color: #fff !important;
+}
+
+.table tbody tr:hover {
+    background-color: #eeeaea !important;
+}
+
+/* .table tbody tr:nth-child(even):hover {
+    background-color: #bae0e0 !important;
+} */
+
+.table td:first-child {
+    font-weight: bold !important;
+    font-size: 1.1rem;
+}
+
+.table td {
+    padding: 5px !important;
+}
+
+.btn-cns {
+    cursor: pointer;
+    /* color: #2477bb; */
+    /* background-color: transparent; */
+    border: 0;
+    padding: 2px 5px;
+
+    background-color: #2477bb;
+    border-radius: 7px;
+    /* margin-top: 8px; */
+    box-shadow: 1px 1px 7px rgba(34, 34, 34, 0.537);
+    color: #fff;
+    opacity: 90%;
+}
+
+.btn-cns:focus {
+    outline: none;
+}
+
+.btn-cns:hover {
+    /* font-weight: bolder ; */
+    text-decoration: underline;
+}
+
+.lista-exames {
+    /* background-color: #f8f07e; */
+    background-color: #18a151;
+    border-radius: 7px;
+    margin-top: 8px;
+    box-shadow: 1px 1px 7px rgba(34, 34, 34, 0.537);
+    color: #fff;
+    opacity: 70%;
+}
+
+.lista-exames ul{
+    text-align: center;
+    padding: 0;
+}
+
+.exame {
+    padding: 2px;
+}
+
+@media(max-width: 850px) {
+    .table thead {
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+    }
+
+    .table tr {
+        margin-bottom: 20px;
+    }
+
+    .table td {
+        text-align: right;
+        padding-left: 50%;
+        line-height: 16px;
+        /* position: relative; */
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+        z-index: 1 !important;
+    }
+
+    .lista-exames {
+        border-radius: 0;
+    }
+}

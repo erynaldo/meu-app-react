@@ -1,0 +1,64 @@
+.container-tabela {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    background-color: #efedf1 !important;
+    height: 180vh !important;
+}
+
+.tabela {
+    width: 80%;
+    margin: auto !important;
+    background-color: #2dbe9a !important;
+    text-align: center;
+}
+
+table {
+    /* display: inline-flex; */
+    display: inline-flex !important;
+    /* box-sizing: border-box; */
+    /* margin-top: 40px !important; */
+    width: 300px !important;
+
+        text-align: center;
+        /* background-color: #9cd80f !important; */
+        margin: auto;
+        /* display: flex !important; */
+        justify-content: center;
+    
+        /* display: flex; */
+        flex-flow: row wrap;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+} 
+
+thead {
+    background-color: #6d8e8f;
+}
+
+th, td {
+    border: 1px solid #4e4d4d !important;
+}
+
+tr:hover {
+    background-color: #cce0e0 !important;
+}
+
+.dado {
+    text-align: left;
+}
+
+.cns {
+    cursor: pointer;
+    color: #2477bb;
+    text-decoration: underline;
+}
+
+.cns:hover {
+    /* background-color: #e5ce8f; */
+    color: #e72828;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 1.4rem;
+}

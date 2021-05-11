@@ -11,6 +11,7 @@ import './App.css';
 
 import Header from './Components/Header';
 import Main from './Components/Main';
+// import Tabela from './Components/Tabela';
 import Footer from './Components/Footer';
 import ScrollToTop from './Components/ScrollToTop';
 
@@ -19,6 +20,7 @@ export default function App() {
         <div className="App">
             <Header />
             <Main />
+            {/* <Tabela /> */}
             <Footer />
             <ScrollToTop />
         </div>

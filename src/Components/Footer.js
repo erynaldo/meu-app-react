@@ -6,20 +6,36 @@ const Footer = () => {
 // function Footer() {
     return( 
         <footer className="Footer">
+            
             <section className="section-1">
+                <nav>
+                    <a className="link" href="/">Home</a>
+                    <a className="link" href="/contato">Contato</a>
+                    <a className="link" href="/sistema">Sistema</a>
+                    <a className="link" href="/">Manuais</a>
+                    <a className="link" href="/">Tutoriais</a>
+                    <a className="link" href="/">Vídeos-Tutoriais</a>
+                    <a className="link" href="/">Serviços</a>
+                    <a className="link" href="/">Contra-Cheque</a>
+                    <a className="link" href="/">IPTU</a>
+                    <a className="link" href="/">Nota de Serviço</a>
+                </nav>
+            </section>
+
+            <section className="section-2">
                 <div className="coluna-um">
-                    <nav>
-                            <a className="link" href="/">Contato</a>
-                            <a className="link" href="/">Home</a> 
-                            <a className="link" href="/">Sistema</a>
-                            <a className="link" href="/">Manuais</a>
-                            <a className="link" href="/">Tutoriais</a>
-                            <a className="link" href="/">Vídeos-Tutoriais</a>
-                            <a className="link" href="/">Serviços</a>
-                            <a className="link" href="/">Contra-Cheque</a>
-                            <a className="link" href="/">IPTU</a>
-                            <a className="link" href="/">Nota de Serviço</a>
-                    </nav>
+                    {/* <nav>
+                        <a className="link" href="/">Home</a>
+                        <a className="link" href="/contato">Contato</a>
+                        <a className="link" href="/sistema">Sistema</a>
+                        <a className="link" href="/">Manuais</a>
+                        <a className="link" href="/">Tutoriais</a>
+                        <a className="link" href="/">Vídeos-Tutoriais</a>
+                        <a className="link" href="/">Serviços</a>
+                        <a className="link" href="/">Contra-Cheque</a>
+                        <a className="link" href="/">IPTU</a>
+                        <a className="link" href="/">Nota de Serviço</a>
+                    </nav> */}
                     
                     <p className="siga-nos">Siga-nos nas redes sociais</p>
 
@@ -35,7 +51,7 @@ const Footer = () => {
 
                 <div className="coluna-dois">
                     <p className="primeiro-paragrafo">Nome da Empresa ou Instituição</p>
-                        <p className="paragrafo-resposta">Rua São Paulo, 1234, Centro. São João da Fronteira-PI</p>
+                        <p className="paragrafo-resposta">Rua Projetada, 1234, Centro. Cidade-UF</p>
                     <p className="paragrafo-titulo">Telefone:
                         <span className="paragrafo-resposta"> (86)9 8100-9999</span>
                     </p>
@@ -50,10 +66,10 @@ const Footer = () => {
                 </div>
             </section>
             
-            <section className="section-2">
-                <div className="linha"></div>
+            <section className="section-3">
+                {/* <div className="linha"></div> */}
                 <p><a href="."><img className="logo-footer" src={Logo} alt="logotipo" /></a></p>
-                <p><span className="corporation">Desenvolvido por ERSI Sistemas</span></p>
+                <p><span className="corporation">Desenvolvido por Erinaldo Cardoso</span></p>
                 <p><span className="corporation">&copy;&nbsp;{new Date().getFullYear()}.&nbsp;Todos os direitos reservados</span></p>
             </section>
             {/* &nbsp; dar dois espaços

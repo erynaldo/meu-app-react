@@ -115,81 +115,92 @@ const Header = () => {
             </div>
 
             <div className="cx-menu-h">
-                    <ul>
-                        <li><a href="."><i className="fa fa-home" aria-hidden="true"></i>&ensp;Home</a></li>
-                        {/* <li>
-                            <a data-toggle="dropdown" className="link-menu-h"><i className="fas fa-code"></i>&ensp;Sistema&ensp;<i className="fas fa-angle-down"></i></a>
-                            <div className="dropdown-menu">
-                                <a href="manuais">Manuais</a>
-                                <a href="#">Tutoriais</a>
-                                <a href="#">Vídeos-Tutoriais</a>
-                            
-                            </div>
-                        </li>
-                        <li>
-                            <a data-toggle="dropdown" className="link-menu-h"><i className="fas fa-th-list"></i>&ensp;Serviços&ensp;<i className="fas fa-angle-down"></i></a>
-                            <div className="dropdown-menu">
-                                <a href="#">Contra-Cheque</a>
-                                <a href="#">Nota de Serviço</a>
-                                <a href="#">IPTU</a>
-                            </div>
-                        </li> */}
+                <ul>
+                    <li><a href="."><i className="fa fa-home" aria-hidden="true"></i>&ensp;Home</a></li>
+                    {/* <li>
+                        <a data-toggle="dropdown" className="link-menu-h"><i className="fas fa-code"></i>&ensp;Sistema&ensp;<i className="fas fa-angle-down"></i></a>
+                        <div className="dropdown-menu">
+                            <a href="manuais">Manuais</a>
+                            <a href="#">Tutoriais</a>
+                            <a href="#">Vídeos-Tutoriais</a>
+                        
+                        </div>
+                    </li>
+                    <li>
+                        <a data-toggle="dropdown" className="link-menu-h"><i className="fas fa-th-list"></i>&ensp;Serviços&ensp;<i className="fas fa-angle-down"></i></a>
+                        <div className="dropdown-menu">
+                            <a href="#">Contra-Cheque</a>
+                            <a href="#">Nota de Serviço</a>
+                            <a href="#">IPTU</a>
+                        </div>
+                    </li> */}
 
-                        <li><span><i className="fas fa-code" aria-hidden="true"></i>&ensp;Sistema</span>
-                            <ul>
-                                <li><a href="manuais">Manuais</a></li>
-                                <li><a href="tutoriais">Tutoriais</a></li>
-                                <li><a href="videos-tutoriais">Vídeos-Tutoriais</a></li>
-                            </ul>
-                        </li>
+                    <li><span><i className="fas fa-code" aria-hidden="true"></i>&ensp;Sistema</span>
+                        <ul>
+                            <li><a href="manuais">Manuais</a></li>
+                            <li><a href="tutoriais">Tutoriais</a></li>
+                            <li><a href="videos-tutoriais">Vídeos-Tutoriais</a></li>
+                        </ul>
+                    </li>
 
-                        <li><span><i className="fas fa-th-list" aria-hidden="true"></i>&ensp;Serviços</span>
-                            <ul>
-                                <li><a href="contra-cheque">Contra-Cheque</a></li>
-                                <li><a href="nota-de-servico">Nota de Serviço</a></li>
-                                <li><a href="iptu">IPTU</a></li>
-                            </ul>
-                        </li>
+                    <li><span><i className="fas fa-th-list" aria-hidden="true"></i>&ensp;Serviços</span>
+                        <ul>
+                            <li><a href="contra-cheque">Contra-Cheque</a></li>
+                            <li><a href="nota-de-servico">Nota de Serviço</a></li>
+                            <li><a href="iptu">IPTU</a></li>
+                        </ul>
+                    </li>
 
-                        <li><a href="contato"><i className="fa fa-envelope"></i>&ensp;Contato</a></li>
-                    </ul>
-                </div>
+                    <li><a href="contato"><i className="fa fa-envelope"></i>&ensp;Contato</a></li>
+                </ul>
+            </div>
 
                 <div className="cx-pesquisar">
-                    <div className="btn-login-mobile"><a href="login"><i className="fas fa-user" aria-hidden="true"></i>&ensp;</a></div>
+                    {/* <div className="btn-login-mobile"><a href="login"><i className="fas fa-user" aria-hidden="true"></i>&ensp;</a></div> */}
     
                     <div className="cx-btn-login">
                         <span className="btn-login" data-toggle="dropdown"><i className="fas fa-user" aria-hidden="true"></i>&ensp;Login</span>
                         {/* <a href="/" data-toggle="dropdown"><i class="fas fa-user" aria-hidden="true"></i>&ensp;Login</a> */}
                         <div id="dropdown-alterar" className="dropdown-menu">
-                            <form action="" className="form-login-dropdown">
-                                <span className="btn-fechar" onClick={() => setCpf('')}><i className="fas fa-close"></i></span>
-                                <label for="cpf">CPF</label>
-                                <MaskedInput
-                                    name="cpf" 
-                                    className="input-login-navbar" 
-                                    placeholder="Digite seu CPF" 
-                                    // required="required"
-                                    value={cpf} 
-                                    onChange={(event) => setCpf(event.target.value)}
-                                />
-                                {/* <input type="text" id="cpf" name="cpf" class="input-login-navbar" maxlength="14" onkeyup="mascara_cpf()" onkeypress="return apenasNumero();" placeholder="Digite seu CPF" required="required" /> */}
-                                <label for="senha">Senha</label>
-                                <input type="password" id="senha" name="senha" className="input-login-navbar" placeholder="Digite sua senha" required="required" />
-                                <button type="submit" className="button-login-navbar">Entrar</button>
-                                <div className="esqueci-cadastre"><a href="esqueci-senha" id="esqueci-senha">Esqueci a senha</a>&ensp;|&ensp;<a href="cadastre-se" id="cadastre">Cadastre-se</a></div>
-                            </form>
+                            <div className="container-formulario-login">
+                                <form action="" className="form-login-dropdown">
+                                    {/* <span className="btn-fechar" onClick={() => setCpf('')}><i className="fas fa-close"></i></span> */}
+                                    <h4>Login</h4>
+                                    {/* <label for="cpf">CPF</label> */}
+                                    <div className="form-group">
+                                        <MaskedInput
+                                            name="cpf" 
+                                            className="input-login-navbar" 
+                                            placeholder="CPF" 
+                                            // required="required"
+                                            value={cpf} 
+                                            onChange={(event) => setCpf(event.target.value)}
+                                        />
+                                    </div>
+                                    
+                                    {/* <input type="text" id="cpf" name="cpf" class="input-login-navbar" maxlength="14" onkeyup="mascara_cpf()" onkeypress="return apenasNumero();" placeholder="Digite seu CPF" required="required" /> */}
+                                    {/* <label for="senha">Senha</label> */}
+                                    <div className="form-group">
+                                        <input type="password" id="senha" name="senha" className="input-login-navbar" placeholder="Senha" required="required" />
+                                    </div>
+                                    
+                                    <button type="submit" className="button-login-navbar">Entrar</button>
+                                    <div className="esqueci-cadastre"><a href="esqueci-senha" id="esqueci-senha">Esqueci a senha</a>&ensp;|&ensp;<a href="cadastre-se" id="cadastre">Cadastre-se</a></div>
+                                </form>
+                            </div>
                         </div>
                     </div>
 
                     <div className="cx-btn-search">
                         <span className="btn-search"  data-toggle="dropdown"><i className="fa fa-search" aria-hidden="true"></i>&ensp;</span>
                         <div id="dropdown-alterar" className="dropdown-menu">
-                            <form action="" className="form-search-dropdown">
-                                <span className="btn-fechar2"><i className="fas fa-close"></i></span>
-                                <input type="text" id="pesquisar" name="pesquisar" className="input-search" placeholder="Pesquisar" />
-                                <button type="submit" className="button-submit-search">Buscar</button>
-                            </form>
+                            <div className="container-formulario-search">
+                                <form action="" className="form-search-dropdown">
+                                    {/* <span className="btn-fechar2"><i className="fas fa-close"></i></span> */}
+                                    <input type="text" id="pesquisar" name="pesquisar" className="input-search" placeholder="Pesquisar" />
+                                    <button type="submit" className="button-submit-search">Buscar</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
 
