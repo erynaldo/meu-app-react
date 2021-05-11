@@ -63,7 +63,7 @@
     letter-spacing: 1px;
     font-size: 1em;
     transition: .3s;
-    opacity: 85%;
+    /* opacity: 85%; */
 }
 
 .cx-menu-h span{
@@ -77,7 +77,7 @@
     letter-spacing: 1px;
     font-size: 1em;
     transition: .3s;
-    opacity: 85%;
+    /* opacity: 85%; */
 }
 
 .cx-menu-h a:hover{
