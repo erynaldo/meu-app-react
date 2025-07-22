@@ -41,6 +41,7 @@ const Section = () => {
               <h6 className="codigo">git log</h6>
               <h6 className="codigo">git push</h6><br />
             <h5>Dev. Erinaldo Cardoso. Em 21-01-2021</h5>
+            <h5>Atualizado em 22-07-2025</h5>
         </section>
     );
 }
